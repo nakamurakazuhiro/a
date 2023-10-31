@@ -2,17 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>動物一覧</title>
+	<title>動物検索画面</title>
 	<meta charset="utf-8" />
 </head>
 
 <body>
-	<form action="animalsResult" method="get">
-		<h1>動物検索画面</h1>
-		<select name="animals">
-			<option th:each="animal : ${animalsList}" th:value="${animal.id}" th:text="${animal.japaneseName}">
-			</option>
+	<h1>動物検索画面</h1>
+	<form action="animalsDetail" method="get">
+		<select name="animalsSearch">
+			<option th:each="animals : ${animalsSearch}" th:value="${animals.id}" th:text="${animals.japaneseName}"></option>
 		</select>
-		<button type="submit">検索</button>
+		<input type="submit" value="検索">
 	</form>
 </body>
+
+</html>

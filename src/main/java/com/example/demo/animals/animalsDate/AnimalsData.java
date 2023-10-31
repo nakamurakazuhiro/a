@@ -1,11 +1,11 @@
-package com.example.demo.AnimalsAPI.data;
+package com.example.demo.animals.animalsDate;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Data;
 
 @Data
-public class AnimalsAPIData {
+public class AnimalsData {
 
 	@JsonProperty("id")
 	private int id;
@@ -14,7 +14,7 @@ public class AnimalsAPIData {
 	private String name;
 
 	@JsonProperty("japanese_name")
-	private String japaneseName;
+	private String japanese_name;
 
 	@JsonProperty("cry")
 	private String cry;

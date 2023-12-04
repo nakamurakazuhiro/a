@@ -7,7 +7,10 @@ public class MultiService{
 
 	public int plus(int num1, int num2) {
 
-		int result = num1 * num2;
+		int result =0;
+		int x =0;
+		
+		x =num1 * num2;
 
 		return result;
 
